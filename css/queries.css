@@ -11,6 +11,10 @@
 
 }
 
+.madre-icon {
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 1024px) {
     .hero .hero-content {
         padding-top: 50%;
@@ -135,7 +139,7 @@ blockquote {
     width: 6em; /* Ajusta este valor según sea necesario */
     height: auto;
     vertical-align: middle;
-    margin-right: -9px; /* Añade esto para agregar espacio a la derecha de la imagen */
+    margin-right: 80px; /* Añade esto para agregar espacio a la derecha de la imagen */
 }
 
 .header {
