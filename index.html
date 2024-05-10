@@ -331,7 +331,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-xs-6 col-sm-4 col-md-2">
                 <a class="fancybox" rel="group" href="img/eng_pics/_RFX2942-lg.jpg">
                     <div class="img-wrap">
                         <div class="overlay">
@@ -341,7 +341,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-2">
+            <div class="col-xs-6 col-sm-4 col-md-2">
                 <a class="fancybox" rel="group" href="img/eng_pics/IMG_3483-lg.jpg">
                     <div class="img-wrap">
                         <div class="overlay">
@@ -351,7 +351,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-2">
+            <div class="col-xs-6 col-sm-4 col-md-2">
                 <a class="fancybox" rel="group" href="img/eng_pics/_RFX2992-lg.jpg">
                     <div class="img-wrap">
                         <div class="overlay">
@@ -361,7 +361,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-2">
+            <div class="col-xs-6 col-sm-4 col-md-2">
                 <a class="fancybox" rel="group" href="img/eng_pics/_RFX3064-lg.jpg">
                     <div class="img-wrap">
                         <div class="overlay">
@@ -371,7 +371,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-2">
+            <div class="col-xs-6 col-sm-4 col-md-2">
                 <a class="fancybox" rel="group" href="img/eng_pics/NGP_4089-lg.jpg">
                     <div class="img-wrap">
                         <div class="overlay">
@@ -381,7 +381,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-2">
+            <div class="col-xs-6 col-sm-4 col-md-2">
                 <a class="fancybox" rel="group" href="img/eng_pics/NGP_4119-lg.jpg">
                     <div class="img-wrap">
                         <div class="overlay">
@@ -413,7 +413,7 @@
 <section id="map" class="section-padding">
     <div class="text-center">
         <h3>Cómo llegar?</h3>
-        <p>Es más facil de lo que parece!</p>
+        <p>Es más fácil de lo que parece!</p>
     </div>
     <div id="map-canvas"></div>
     <div id="map-content-wrapper" class="container pointer-events-none">
@@ -436,7 +436,7 @@
                             <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Mostrar mapa</a>
                         </div>
                         <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" href="https://maps.app.goo.gl/PM1eZ4oU6uPo4Q6v6" target="_blank"><i class="fa fa-external-link"></i>&nbsp;&nbsp;Abrir ubicacion</a>
+                            <a class="btn btn-accent btn-small hidden-xs" href="https://maps.app.goo.gl/PM1eZ4oU6uPo4Q6v6" target="_blank"><i class="fa fa-external-link"></i>&nbsp;&nbsp;Abrir ubicación</a>
                         </div>
                     </div>
                 </div>
@@ -445,60 +445,65 @@
     </div>
 </section>
 
+
 <section class="rsvp text-center" id="rsvp">
 
-    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <div class="section-padding">
-                        <h3>Muchas gracias!!</h3>
-                        <p>Estaremos encantados de que nos acompañes!.</p>
-                        <div id="add-to-cal"></div>
-                    </div>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+    <div class="container">
+        <section class="rsvp text-center" id="rsvp">
+            <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+                            <div class="section-padding">
+                                <h3>Muchas gracias!!</h3>
+                                <p>¡Estaremos encantados de que nos acompañes!</p>
+                                <div id="add-to-cal"></div>
+                            </div>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+        </section>
+    </div>
+    
 
-    <div class="container container-extra-margin">
+    <div class="containerbtn">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3>Qué estas esperando?</h3>
-                <p>Por motivos de logistica, necesitamos confirmes lo antes posible para enviarte los pases digitales.</p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
-                      <button class="btn-fill rsvp-btn" onclick="abrirWhatsApp('7713384831')">
-                        <img src="img/novio.png" alt="Imagen del novio">
-                        Confirmar con el novio
-                    </button>
-                    
-                    <button class="btn-fill rsvp-btn" onclick="abrirWhatsApp('7711920310')">
-                        <img src="img/novia.png" alt="Imagen de la novia">
-                        Confirmar con la novia
-                    </button>
-                    
-                    <div class="col-md-6 col-sm-6">
+            <div class="col-md-12">
+                <h3 class="text-center">Qué estás esperando?</h3>
+                <p class="text-center">Por motivos de logística, necesitamos que confirmes lo antes posible para enviarte los pases digitales.</p>
+                <form id="rsvp-form" class="rsvp-form" action="" method="POST">
+                    <div class="col-12 text-center mb-3">
+                        <button class="btn btn-fill rsvp-btn" onclick="abrirWhatsApp('7713384831')">
+                            <img src="img/novio.png" alt="Imagen del novio" class="img-fluid"> Confirmar con el novio
+                        </button>
+                    </div>
+                    <div class="col-12 text-center mb-3">
+                        <button class="btn btn-fill rsvp-btn" onclick="abrirWhatsApp('7711920310')">
+                            <img src="img/novia.png" alt="Imagen de la novia" class="img-fluid"> Confirmar con la novia
+                        </button>
+                    </div>
+                    <div class="col-12 text-center mb-3">
                         <div class="form-input-group">
-                            <i class="fa fa-user"></i><input type="text" id="nombre" class="" placeholder="Tu nombre" required>
+                            <i class="fa fa-user"></i><input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-12 text-center mb-3">
                         <div class="form-input-group">
-                            <i class="fa fa-key"></i><input type="text" id="codigoInvitacion" class="form-control" placeholder="Tu codigo de invitacion" maxlength="20" required>
+                            <i class="fa fa-key"></i><input type="text" id="codigoInvitacion" class="form-control" placeholder="Tu código de invitación" maxlength="20" required>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    
+    
 </section>
 
 <footer>
-    <div class="container">
+    <div class="containerend">
         <div class="row">
             <div class="col-sm-12 text-center content">
                 <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>

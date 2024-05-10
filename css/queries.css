@@ -67,6 +67,8 @@ audio {
     }
 }
 
+
+
 .itinerary-icon {
     width: 5em; /* Ajusta este valor según sea necesario */
     height: auto;
@@ -90,13 +92,22 @@ audio {
 }
 
 
-blockquote {
-    font-style: cursive;
-    font-size: 18px;
-    margin: 20px 0;
-    padding: 10px;
-    border-left: 5px solid #ccc;
+/* Estilos para el bloque de cita */
+.quote {
+    font-size: 1.2rem; /* Tamaño de fuente relativo */
+    margin: 0 auto; /* Centra el bloque */
+    max-width: 600px; /* Ancho máximo para evitar que el texto se extienda demasiado en pantallas grandes */
+    padding: 20px; /* Añade un poco de espacio alrededor del texto */
 }
+
+/* Ajustes específicos para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 767px) {
+    .quote {
+        font-size: 1rem; /* Reducir el tamaño de la fuente para dispositivos móviles */
+        max-width: 90%; /* Ancho máximo relativo para evitar que el texto sea demasiado ancho en pantallas pequeñas */
+    }
+}
+
   
 
 
@@ -392,6 +403,9 @@ blockquote {
     width: 40px; /* Cambia el tamaño de acuerdo a tus necesidades */
   }
 
+  
+
+
 
     .events .leftcol {
         padding: 0 15px;
@@ -541,4 +555,65 @@ blockquote {
     .rsvp {
         padding-top: 20px;
     }
+}
+
+.containerbtn {
+    margin-top: 150px; /* Ajusta este valor según sea necesario */
+}
+
+.btn {
+    margin-bottom: 20px; /* Ajusta este valor según sea necesario */
+}
+
+/* Estilos para todas las imágenes dentro de los botones */
+.rsvp-btn img {
+    width: 50px; /* Cambia el tamaño de acuerdo a tus necesidades */
+    height: auto; /* Para mantener la proporción de aspecto */
+}
+
+/* Estilos para los botones */
+.btn-fill {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio interior */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cursor de puntero */
+    border-radius: 5px; /* Borde redondeado */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+/* Estilos para los botones al pasar el mouse */
+.btn-fill:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilos para el contenedor del formulario */
+.form-input-group {
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para el icono dentro del input */
+.form-input-group i {
+    margin-right: 10px; /* Espacio a la derecha */
+}
+
+/* Estilos para los inputs */
+.form-control {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interior */
+    font-size: 16px; /* Tamaño del texto */
+    border-radius: 5px; /* Borde redondeado */
+    border: 1px solid #ccc; /* Borde delgado */
+    transition: border-color 0.3s; /* Transición suave del color del borde */
+}
+
+/* Estilos para los inputs al enfocar */
+.form-control:focus {
+    border-color: #4CAF50; /* Cambia el color del borde al enfocar */
+}
+
+/* Estilos para el texto centrado */
+.text-center {
+    text-align: center; /* Centrar el texto */
 }
