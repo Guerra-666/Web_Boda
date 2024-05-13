@@ -170,12 +170,12 @@ Animations
   }
 }
 
-@keyframes slideShow {
-  0% { background-image: url('../img/fondo1.jpeg'); }
-  33% { background-image: url('../img/fondo2.jpeg'); }
-  66% { background-image: url('../img/fondo3.jpeg'); }
-  100% { background-image: url('../img/fondo4.jpeg'); }
-}
+// @keyframes slideShow {
+//   0% { background-image: url('../img/fondo1.jpeg'); }
+//   33% { background-image: url('../img/fondo2.jpeg'); }
+//   66% { background-image: url('../img/fondo3.jpeg'); }
+//   100% { background-image: url('../img/fondo4.jpeg'); }
+// }
 /* ==========================================================================
 Waypoinsts
 ========================================================================== */
@@ -269,22 +269,22 @@ Hero
 ========================================================================== */
 
 
-@keyframes slideShow {
-  0% { background-image: url('../img/fondo1.jpeg'); }
-  10% { background-image: url('../img/fondo2.jpeg'); }
-  20% { background-image: url('../img/fondo3.jpeg'); }
-  30% { background-image: url('../img/fondo4.jpeg'); }
-  40% { background-image: url('../img/fondo5.jpeg'); }
-  50% { background-image: url('../img/fondo6.jpeg'); }
-  60% { background-image: url('../img/fondo7.jpeg'); }
-  70% { background-image: url('../img/fondo8.jpeg'); }
-  80% { background-image: url('../img/fondo9.jpeg'); }
-  90% { background-image: url('../img/fondo10.jpeg'); }
-  100% { background-image: url('../img/fondo1.jpeg'); }
-}
+// @keyframes slideShow {
+//   0% { background-image: url('../img/fondo1.jpeg'); }
+//   10% { background-image: url('../img/fondo2.jpeg'); }
+//   20% { background-image: url('../img/fondo3.jpeg'); }
+//   30% { background-image: url('../img/fondo4.jpeg'); }
+//   40% { background-image: url('../img/fondo5.jpeg'); }
+//   50% { background-image: url('../img/fondo6.jpeg'); }
+//   60% { background-image: url('../img/fondo7.jpeg'); }
+//   70% { background-image: url('../img/fondo8.jpeg'); }
+//   80% { background-image: url('../img/fondo9.jpeg'); }
+//   90% { background-image: url('../img/fondo10.jpeg'); }
+//   100% { background-image: url('../img/fondo1.jpeg'); }
+// }
 .hero {
   min-height: 750px;
-  background: url('../img/carrusel/fondo1.jpeg') center center;
+  background: url('../img/hero.gif') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

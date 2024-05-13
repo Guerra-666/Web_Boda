@@ -171,7 +171,7 @@
     </div>
 </section>
 
-//Añadido
+
 <section id="dressCode">
     <div class="container">
         <div class="row">
@@ -194,7 +194,7 @@
         </div>
     </div>
 </section>
-//Fin Añadido
+
 
 <section class="events section-padding" id="events">
     <div class="container">
@@ -422,20 +422,15 @@
                             <h5>Salones VERAVIA</h5>
                             <p>Blvd. Felipe Ángeles 905, Venta Prieta, Pachuca de Soto.</p>
                         </div>
-                        <!-- <div class="col-md-6">
-                            <h5>Mr. Amit Roy</h5>
-                            <p><i class="fa fa-mobile"></i> <a href="tel://+919412345678">+91 9412345678</a><br>
-                                <i class="fa fa-mobile"></i> <a href="tel://+917123456789">+91 7123456789</a></p>
-                        </div> -->
                     </div>
                     <div class="row text-center">
-                        <!-- <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-                        </div> -->
                         <div class="col-md-6" style="padding: 5px;">
                             <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Mostrar mapa</a>
+                        </div>
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a href="https://maps.app.goo.gl/zzjdb41zaE8YozK8A" class="btn btn-accent btn-small" id="btn-show-map">
+                                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Abrir ubicación
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -445,63 +440,43 @@
 </section>
 
 <section class="rsvp text-center" id="rsvp">
-
-    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <div class="section-padding">
-                        <h3>Gracias!</h3>
-                        <p>Estamos emocionados de verte en nuestro gran día.</p>
-                        <div id="add-to-cal"></div>
-                    </div>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
+    <div class="extra-margin"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h3>Confirmanos lo antes posible!</h3>
+                <h3 id="confirmacion">Confirmanos lo antes posible!</h3>
                 <p>Por motivos de logistica, necesitamos confirmes lo antes posibe!</p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
+                <form id="rsvp-form" class="rsvp-form" action="" method="POST">
                     <div class="row">
-                        
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Tu nombre"
-                                                                 required>
+                                <i class="fa fa-user"></i>
+                                <input id="nombre" name="name" class="" placeholder="Tu nombre" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Codigo de invitacion"
-                                                                required>
+                                <i class="fa fa-key"></i>
+                                <input type="number" id="codigoInvitacion" name="invite_code" class="" min="0"
+                                       placeholder="Codigo de invitacion" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12" id="alert-wrapper"></div>
+                        <div class="col-md-12" id="nada"></div>
                     </div>
-                    <button class="btn-fill rsvp-btn" onclick="abrirWhatsApp('7713384831')">
-                        <img src="img/novio.png" alt="Imagen del novio">
-                        Confirmar con la Novia
-                    </button>
-                    <button class="btn-fill rsvp-btn" onclick="abrirWhatsApp('7713384831')">
-                        <img src="img/novia.png" alt="Imagen de la novia">
+                    <button class="btn-fill rsvp-btn" onclick="abrirWhatsApp('7713384831', 'Confirmar con el Novio')">
+                        <img src="img/novio.png" class="novio">
                         Confirmar con el Novio
                     </button>
+                    <button class="btn-fill rsvp-btn" onclick="abrirWhatsApp('7713384831', 'Confirmar con la Novia')">
+                        <img src="img/novia.png" class="novia">
+                        Confirmar con la Novia
+                    </button>
                 </form>
+                
             </div>
         </div>
     </div>
@@ -512,7 +487,7 @@
         <div class="row">
             <div class="col-sm-12 text-center content">
                 <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>Crafted by Adrian Guerra with lots of <span class="fa fa-heart pulse2"></span> for my Lovesita</p>
+                <p class="lovesitos">Crafted by Adrian Guerra with lots of <span class="fa fa-heart pulse2"></span> for my Lovesita</p>
             </div>
         </div>
     </div>
@@ -527,37 +502,22 @@
 <script src="js/scripts.min.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
-<!-- Google Analytics -->
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-46465113-4', 'auto');
-    ga('send', 'pageview');
-</script>
+
 <script> //Funcion Whats
     function abrirWhatsApp(numeroWhatsApp) {
         // Obtener los valores de los campos de entrada
-         const nombre = document.getElementById('nombre').value;
-         const codigoInvitacion = document.getElementById('codigoInvitacion').value;
- 
-         // Mensaje con los datos incluidos
-         const mensaje = "Hola, soy " + nombre + " y quiero confirmar mi asistencia a la boda con el código de invitación: " + codigoInvitacion;
- 
-         // Crear el enlace de WhatsApp con el prefijo adecuado
-         const enlaceWhatsApp = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(mensaje);
- 
-         // Abrir WhatsApp en una nueva ventana o pestaña
-         window.open(enlaceWhatsApp);
-         // Manejar múltiples casos con switch
+        const nombre = document.getElementById('nombre').value;
+        const codigoInvitacion = document.getElementById('codigoInvitacion').value;
+
+        // Mensaje con los datos incluidos
+        const mensaje = "Hola, soy " + nombre + " y quiero confirmar mi asistencia a la boda con el código de invitación: " + codigoInvitacion;
+
+        // Crear el enlace de WhatsApp con el prefijo adecuado
+        const enlaceWhatsApp = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(mensaje);
+
+        // Abrir WhatsApp en una nueva ventana o pestaña
+        window.open(enlaceWhatsApp);
+
         switch (codigoInvitacion) {
             case "adaleide140924":
                 window.open("https://drive.google.com/file/d/1wUEXFPNp2l0xbYaYm75KLLx8_2Xvjq3v/view?usp=sharing");

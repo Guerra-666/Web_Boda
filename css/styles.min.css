@@ -5,7 +5,8 @@ p {
     font-size: 15px;
     line-height: 29px;
     color: rgba(28, 54, 83, .6);
-    padding-bottom: 20px
+    padding-bottom: 20px;
+    text-align: justify; /*Agregado*/
 }
 
 h1 {
@@ -73,13 +74,13 @@ h5 {
 
 .btn-fill {
     color: #fff;
-    border: solid 2px #e8ca6f;
+    border: solid 2px #3ac127;
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
     border-radius: 40px;
     display: inline-block;
     text-transform: uppercase;
-    background-color: #e8ca6f
+    background-color: #3ac127
 }
 
 .btn-fill:hover,
@@ -128,7 +129,7 @@ section.blog {
 }
 
 a {
-    color: #e8ca6f;
+    color: #000000;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
     -webkit-transition-duration: 200ms;
@@ -139,7 +140,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #d3b56a;
+    color: #464646;
     text-decoration: none
 }
 
@@ -401,7 +402,7 @@ section .header {
 
 .hero {
     min-height: 750px;
-    background: url("../img/hero-min.jpg") center center;
+    background: url("../img/hero.gif") center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -443,7 +444,7 @@ section .header {
 
 .fixed {
     position: fixed;
-    background-color: rgba(55, 36, 40, .88);
+    background-color: rgba(117, 117, 117, 0.88);
     z-index: 999;
     width: 100%
 }
@@ -969,7 +970,8 @@ header .member-actions {
     padding: 15px 0;
     border-radius: 3px;
     width: 100%;
-    font-size: 13px
+    font-size: 13px;
+    margin-block: 10px;
 }
 
 .rsvp .rsvp-form .form-input-group {
@@ -985,7 +987,7 @@ header .member-actions {
 }
 
 .rsvp .rsvp-form .form-input-group i {
-    color: #e8ca6f;
+    color: #000000;
     font-size: 14px
 }
 
@@ -1138,4 +1140,21 @@ audio {
 .countdown div span {
     color: #ffffff;
     font-weight: 300;
+}
+
+.dress-icon {
+    width: 140px;
+    margin-bottom: 50px;
+}
+
+.extra-margin {
+    margin-top: 95px; /* Define el margen superior deseado */
+}
+
+.novio, .novia {
+    width: 50px;
+}
+
+.lovesitos{
+    margin-top: 0%;
 }
