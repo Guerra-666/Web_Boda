@@ -1214,3 +1214,25 @@ audio {
     padding-bottom: 20px;
     margin-top: -40px;
 }
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px; /* Ajusta esto según tus necesidades */
+}
+
+.color-indicator1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #7E0000;
+    margin-right: 10px;
+}
+.color-indicator2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
