@@ -14,7 +14,7 @@
     <meta name="description" content="We would like to invite you to our big day.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="Ram & Antara getting hitched">
+    <meta property="og:title" content="A & Antara getting hitched">
     <meta property="og:description" content="We would like to invite you to our big day.">
     <meta property="og:image" content="null">
     <meta property="og:type" content="website">
@@ -96,24 +96,24 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="hero-content text-center">
                     <!--<h1>Ram and Antara</h1>-->
-                    <img src="img/logo-lg.png">
+                    <img class="logo-animation" src="img/logo-lg.png">
                     <!--<p class="intro">Ram & Antara are getting hitched!</p>-->
                     <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
                     <div class="countdown">
                         <div>
-                            <p id="days">09</p>
+                            <p class="datos-count" id="days">09</p>
                             <span>días</span>
                         </div>
                         <div>
-                            <p id="hours">23</p>
+                            <p class="datos-count" id="hours">23</p>
                             <span>horas</span>
                         </div>
                         <div>
-                            <p id="min">50</p>
+                            <p class="datos-count" id="min">50</p>
                             <span>minutos</span>
                         </div>
                         <div>
-                            <p id="sec">50</p>
+                            <p class="datos-count" id="sec">50</p>
                             <span>segundos</span>
                         </div>
                     </div>
@@ -257,7 +257,7 @@
                     <p>
                         <strong>Obligatoria</strong>
                     </p>
-                    <h5>¿Y el regalo? <span class="time">7PM - 12AM</span></h5>
+                    <h5>¿Y el regalo? <span class="time"></span></h5>
                     <p>
                         <strong>Opcional</strong>
                         <br>
@@ -283,6 +283,43 @@
     </div><!-- /.modal -->
 
 </section>
+
+<!-- Aquí termina la sección "Events" -->
+
+<!-- Aquí comienza la sección "Invitados de Honor" -->
+<section id="invitados-de-honor" class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Invitados de Honor</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="invitado">
+                    <img src="img/padre.png" alt="Invitado 1" class="img-responsive center-block">
+                    <h3>Padre de la Novia</h3>
+                    <p class="nombres">Cirilo Guzman</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="invitado">
+                    <img src="img/hermano.jpeg" alt="Invitado 2" class="img-responsive center-block">
+                    <h3>Hermano de la Novia</h3>
+                    <p class="nombres">Carlos Guzman Rodriguez</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="invitado">
+                    <img src="img/padres.jpeg" alt="Invitado 3" class="img-responsive center-block">
+                    <h3>Padres del Novio</h3>
+                    <p class="nombres">Heidy Guerra & Enrique Perez</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Aquí termina la sección "Invitados de Honor" -->
 
 <section id="instagram" class="section-padding">
     <div class="container">
@@ -405,9 +442,11 @@
 <section id="map" class="section-padding">
     <div class="text-center">
         <h3>Cómo llegar?</h3>
-        <p>Es más facil de lo que piensas!</p>
+        <p class="llegar">Es más facil de lo que piensas!</p>
     </div>
-    <div id="map-canvas"></div>
+    <!-- <div id="map-canvas"></div> -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.2580237973975!2d-98.77509162476888!3d20.08149808134125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a0e977b03665%3A0x4097e5945293c13a!2sSalon%20de%20Fiestas%20Veravia!5e0!3m2!1ses-419!2smx!4v1715579692309!5m2!1ses-419!2smx" width="390" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     <div id="map-content-wrapper" class="container pointer-events-none">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
@@ -459,7 +498,7 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-key"></i>
-                                <input type="number" id="codigoInvitacion" name="invite_code" class="" min="0"
+                                <input type="text" id="codigoInvitacion" name="invite_code" class="" min="0"
                                        placeholder="Codigo de invitacion" required>
                             </div>
                         </div>

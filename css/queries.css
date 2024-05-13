@@ -415,7 +415,7 @@ audio {
 }
 
 .countdown div p {
-    font-weight: 600;
+    font-weight: 200;
     font-size: 3rem;
     color: #ffffff;
 }
@@ -424,3 +424,4 @@ audio {
     color: #ffffff;
     font-weight: 300;
 }
+

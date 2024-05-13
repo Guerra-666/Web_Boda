@@ -559,11 +559,12 @@ header .member-actions {
 
 #intro img {
     width: 100%;
-    height: auto
+    height: auto;
+    border-radius: 10%;
 }
 
 #intro p {
-    text-align: center
+    text-align: justify;
 }
 
 .features {
@@ -1132,9 +1133,10 @@ audio {
 }
 
 .countdown div p {
-    font-weight: 600;
+    font-weight: 200;
     font-size: 3rem;
     color: #ffffff;
+    text-align: center;
 }
 
 .countdown div span {
@@ -1157,4 +1159,51 @@ audio {
 
 .lovesitos{
     margin-top: 0%;
+}
+
+.img-responsive{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.nombres{
+    text-align: center;
+}
+
+.llegar {
+    text-align: center;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.logo-animation {
+    animation: fadeInScale 2s ease-out;
+}
+
+.datos-count{
+    padding-bottom: 0%;
 }
