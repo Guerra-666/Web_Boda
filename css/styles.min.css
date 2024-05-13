@@ -431,8 +431,8 @@ section .header {
 }
 
 .hero .hero-content img {
-    width: 55%;
-    margin-bottom: 12%
+    width: 30%;
+    margin-bottom: 45%
 }
 
 .navigation {
@@ -554,7 +554,7 @@ header .member-actions {
 }
 
 #intro {
-    padding-top: 40px
+    /* padding-top: 40px */
 }
 
 #intro img {
@@ -1206,4 +1206,11 @@ audio {
 
 .datos-count{
     padding-bottom: 0%;
+}
+
+.click {
+    width: 100% !important;
+    border-radius: 0% !important;
+    padding-bottom: 20px;
+    margin-top: -40px;
 }
