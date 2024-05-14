@@ -729,7 +729,9 @@ header .member-actions {
     font-size: 13px;
     font-style: italic;
     text-transform: lowercase;
-    color: rgba(28, 54, 83, .6)
+    color: rgba(28, 54, 83, .6);
+    display: block;
+    text-align: center;
 }
 
 .blog {
