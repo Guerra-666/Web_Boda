@@ -166,7 +166,8 @@ ul li {
 }
 
 section .header {
-    padding-bottom: 30px
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 .section-padding {
@@ -1237,4 +1238,21 @@ audio {
     border-radius: 50%;
     background-color: #ffffff;
     border: 1px solid #000000;
+}
+
+.carrito{
+    width: 50px;
+    margin-top: 10px;
+}
+
+.lovesitos{
+    text-align: center;
+}
+
+.colores{
+    text-align: center;
+}
+
+.fecha{
+    text-align: center;
 }
