@@ -46,7 +46,8 @@ h5 {
     -webkit-border-radius: 40px;
     border-radius: 40px;
     display: inline-block;
-    text-transform: uppercase
+    text-transform: uppercase;
+    background-color: #000;
 }
 
 .btn:hover,
@@ -129,7 +130,7 @@ section.blog {
 }
 
 a {
-    color: #000000;
+    color: #ffffff;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
     -webkit-transition-duration: 200ms;
@@ -432,8 +433,8 @@ section .header {
 }
 
 .hero .hero-content img {
-    width: 30%;
-    margin-bottom: 45%
+    width: 20%;
+    margin-bottom: 50%
 }
 
 .navigation {
