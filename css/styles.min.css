@@ -1257,3 +1257,8 @@ audio {
 .fecha{
     text-align: center;
 }
+
+.salon{
+    margin: auto;
+    width: 500px;
+}
